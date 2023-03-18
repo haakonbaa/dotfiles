@@ -37,7 +37,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # spaceship
-source /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
+source "$HOME/dotfiles/download/.zsh/spaceship/spaceship.zsh"
 
 set -o vi
 
@@ -49,6 +49,7 @@ mat () {
         matlab -nodisplay -nosplash -nodesktop -r "run('$(pwd)/$1');exit;"
     fi
 }
+
 
 PATH=/usr/local/go/bin/:$PATH
 PATH=$HOME/Downloads/google-cloud-sdk/bin/:$PATH
