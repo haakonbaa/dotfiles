@@ -2,7 +2,7 @@
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install i3 rofi zsh
+sudo apt install i3 rofi zsh fonts-font-awesome feh -y
 
 wget https://raw.githubusercontent.com/newmanls/rofi-themes-collection/master/themes/spotlight-dark.rasi -O ./download/spotlight-dark.rasi
 
